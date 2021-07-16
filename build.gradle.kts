@@ -12,3 +12,12 @@ java {
 dependencies {
     implementation(group = "org.eclipse.jetty", name = "jetty-server", version = "11.0.6")
 }
+
+application {
+    mainClass.set("com.example.Example")
+    mainModule.set("com.example")
+}
+
+jlink {
+    options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
+}
