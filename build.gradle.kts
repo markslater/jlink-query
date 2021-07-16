@@ -17,7 +17,6 @@ dependencies {
 application {
     mainClass.set("com.example.Example")
     mainModule.set("com.example")
-    applicationName = "example"
 }
 
 jlink {
