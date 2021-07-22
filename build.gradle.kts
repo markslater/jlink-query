@@ -21,7 +21,6 @@ application {
 
 jlink {
     options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
-    forceMerge("slf4j")
     mergedModule {
         additive = true
         requires("java.management")
